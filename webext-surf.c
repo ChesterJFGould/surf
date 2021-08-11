@@ -95,7 +95,7 @@ webkit_web_extension_initialize_with_user_data(WebKitWebExtension *e,
 
 	webext = e;
 
-	g_variant_get(gv, "i", &sock);
+	g_variant_get(gv, "(ii)", &sock);
 
 	gchansock = g_io_channel_unix_new(sock);
 	g_io_channel_set_encoding(gchansock, NULL, NULL);

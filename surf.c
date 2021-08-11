@@ -1252,7 +1252,7 @@ initwebextensions(WebKitWebContext *wc, Client *c)
 	if (spair[1] < 0)
 		return;
 
-	gv = g_variant_new("i", spair[1]);
+	gv = g_variant_new("(ii)", spair[1]);
 
 	webkit_web_context_set_web_extensions_initialization_user_data(wc, gv);
 	webkit_web_context_set_web_extensions_directory(wc, WEBEXTDIR);
